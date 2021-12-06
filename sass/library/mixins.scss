@@ -1,0 +1,244 @@
+@mixin font{
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+@mixin width-height-auto {
+    height: auto;
+    width: auto;
+}
+
+@mixin width-height-100{
+    width: 100%;
+    height: auto;
+}
+
+@mixin text-list-style-none{
+    list-style: none;
+    text-decoration: none;
+}
+
+@mixin margin-padding-nul{
+    margin: 0;
+    padding: 0;
+}
+
+@mixin margin-sections-blanches{
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+@mixin padding-sections-colorees{
+    padding-bottom: 90px;
+    padding-top: 60px;
+}
+
+@mixin flex-row-aligncenter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin flex-row-aligncen-justispacebet-nowrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+@mixin flex-row-center-spaceevenly-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@mixin flex-justifycenter{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-wrap-column-aligcenter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-nowrap-column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+@mixin flex-column-flexstart-spaceevenly{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+@mixin flex-column-stretch{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+@mixin flex-column-aligncenter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+
+
+@mixin button{
+    @include flex-justifycenter;
+    border-radius: 60px;
+    border: none;
+    font-size: 37px;
+    color: $light;
+    @include font;
+    height: 120px;
+    width: 470px;
+    margin-top: 25px;
+    background:linear-gradient($primary, $secondary);
+
+    box-shadow: 0px 0px 12px 0px $darkgrey;
+    
+    &:hover{
+        background: lighten($color: $lightprimary , $amount: 10);
+        color: dark;
+    }
+}
+
+@mixin cardsstyle1{
+    border-radius: 50px;
+    box-sizing: border-box;
+    background-color: $background;
+    height: 160px;
+    width: 790px;
+    font-size: 45px;
+    @include flex-row-center-spaceevenly-wrap;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: 0;
+    box-shadow: 1px 6px 20px 7px $shadow;
+
+    &:hover{
+        background: lighten($color: $lightprimary, $amount: 10);
+    }
+}
+
+@mixin titles{
+    font-size: 65px;
+    width: 87%;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+@mixin icons{
+    color: $darkgrey ;
+
+    &:hover{
+        color: $secondary;
+    }
+}
+
+@mixin numbers{
+    background: $secondary;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: $background ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    margin-left: -104px;
+}
+
+@mixin cardsstyle2{
+    @include flex-nowrap-column;
+    width: 90%;
+    height: 580px;
+    background-color: $light;
+    box-shadow: 5px 5px 5px 1px $shadow ;
+    border-radius: 55px;
+    box-sizing: border-box;
+    margin-top: 65px;
+}
+
+@mixin menus{
+    @include flex-nowrap-column;
+    color: $dark;
+    font-size: 30px;
+    width: 50%;
+    @include margin-padding-nul;
+    text-decoration: none;
+}
+
+@mixin infosmenus{
+    @include flex-row-aligncen-justispacebet-nowrap;
+    width: 90%;
+    height: 90%;
+    margin-left: 30px;
+
+    .designinfosmenus{
+        margin: 6px;
+        padding: 0;
+    }
+}
+
+@mixin span-new{
+
+    right: 80px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    position: absolute;
+    border: 2px solid $tertiary;
+    border-radius: 4px;
+    font-size: 30px;
+    margin-top: 35px;
+    background-color: $tertiary;
+    color: $spancolor;
+
+       &:hover{
+           background-color: $spancolor;
+           color: aquamarine;
+       } 
+}
+
+@mixin footer-title{
+    font-family: 'Shrikhand';
+    font-size: 30px;
+    font-weight: 400 ;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    width: 95%;
+    margin-left: 30px;
+    color: $light;
+    display: flex;
+}
+
+@mixin footer-list {
+    height: auto;
+    font-size: 15px;
+    width: 95%;
+    margin-left: 30px;
+    padding: 0;
+    margin-bottom: 15px;
+    @include icons-infosfooter;
+} 
+
+@mixin icons-infosfooter{
+    @include text-list-style-none;
+    .iconsfooter1{
+        margin-right: 15px;
+    }
+    .iconsfooter2{
+        margin-right: 9px;
+    }
+}
