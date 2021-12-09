@@ -1,0 +1,57 @@
+body {
+    font-family: "Roboto";
+    @include margin-padding-nul;
+    @include width-height-100;
+}
+
+main{
+    @include flex-column-stretch;
+}
+
+.h1index{
+    font-family: 'Roboto';
+    font-weight: 900;
+    width: 52%;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.h2index{
+    font-size: 65px;
+    width: 87%;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.h1pages{
+    font-family: 'Shrikhand';
+    font-size: 75px;
+}
+
+.h2pages{
+    font-size: 46px;
+    font-weight: 400;
+    margin-top: 60px;
+    width: 13%;
+    border-bottom: 3px solid $tertiary;
+}
+
+.h3pages{
+    margin: 0;
+    font-size: 45px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h4{
+    font-family: 'Shrikhand';
+    font-size: 45px;
+    font-weight: 400 ;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    width: 95%;
+    margin-left: 30px;
+    color: $light;
+    display: flex;
+}

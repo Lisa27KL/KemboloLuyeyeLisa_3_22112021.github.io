@@ -13,11 +13,6 @@
     height: auto;
 }
 
-@mixin width-100-height-100 {
-    width: 100%;
-    height: 100%;
-}
-
 @mixin header-width-height{
     width: 75%;
     height: 170px;
@@ -37,8 +32,6 @@
     padding-bottom: 90px;
     padding-top: 60px;
 }
-
-
 
 
 @mixin flex-row{

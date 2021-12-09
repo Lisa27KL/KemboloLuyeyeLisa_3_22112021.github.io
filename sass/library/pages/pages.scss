@@ -1,0 +1,57 @@
+main{
+    @include flex-nowrap-column;
+    @include margin-padding-nul;
+    background-color: $menu;
+}
+
+main .imgpages{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titleheart{
+    @include flex-row-aligncen-justispacebet-nowrap;
+    width: 95%;
+}
+
+.menus{
+    box-sizing: border-box;
+    position: relative;
+    top: -125px;
+    background-color: $menu;
+    border-radius: 130px 130px 0px 0px;
+    padding: 50px 40px 0px 40px;
+}
+
+.articlespages{
+    @include flex-row;
+    border-radius: 37px;
+    box-sizing: border-box;
+    background-color: $light;
+    height: 180px;
+    width: 100%;
+    font-size: 45px;
+    padding: 32px;
+    margin-bottom: 30px;
+    text-overflow: ellipsis;
+}
+
+.cardsmenus{
+    width: 80%;
+    h3{
+        @include h3-titles;
+    }
+    
+    .recipe{
+        margin: 0;
+        font-size: 36px;
+    }
+}
+
+.price{
+    @include flex-row-flexend-flexend;
+    width: 20%;
+    margin-bottom: 0;
+    font-weight: 600;
+}

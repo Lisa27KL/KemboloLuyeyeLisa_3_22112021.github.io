@@ -1,22 +1,9 @@
-@import "/sass/library/utils/measures.scss";
-@import "/sass/library/utils/variables.scss";
-@import "/sass/library/utils/responsive.scss";
-@import "/sass/library/utils/flexbox.scss";
-@import "/sass/library/base/fonts.scss";
-@import "/sass/library/components/icons.scss";
-@import "/sass/library/pages/blocspages.scss";
-
-
 footer{
     text-align: inherit;
     @include flex-column-flexstart-spaceevenly;
     @include width-height-100;
     color: $light;
     background-color: $dark;
-    
-    h4{
-        @include footer-title;
-    }
 }
 
 footer ul {
@@ -24,5 +11,20 @@ footer ul {
 }
 
 footer ul li{
-    @include footer-list;
+    height: auto;
+    font-size: 20px;
+    width: 95%;
+    margin-left: 30px;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.iconsfooter1{
+    margin-right: 15px;
+    @include text-list-style-none;
+
+}
+.iconsfooter2{
+    margin-right: 9px;
+    @include text-list-style-none;
 }

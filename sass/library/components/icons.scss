@@ -1,27 +1,49 @@
-@import "/sass/library/utils/measures.scss";
-@import "/sass/library/utils/variables.scss";
-@import "/sass/library/utils/responsive.scss";
-@import "/sass/library/utils/flexbox.scss";
-@import "/sass/library/base/fonts.scss";
-@import "/sass/library/pages/blocs.scss";
-
-
-@mixin arrow{
-    font-size: 50px;
-    color: $darkgrey;
-}
-
-@mixin heart{
-    font-size: 80px;
-    color: $dark;
-}
-
-@mixin button{
+.btn{
+    @include flex-justifycenter;
     border-radius: 60px;
     border: none;
     font-size: 37px;
     color: $light;
-    @include font;
+    font-family: 'Roboto';
+    font-weight: 900;    height: 120px;
+    width: 470px;
+    margin-top: 25px;
+    background:linear-gradient($primary, $secondary);
+
+    box-shadow: 0px 0px 12px 0px $darkgrey;
+    
+    &:hover{
+        background: lighten($color: $lightprimary , $amount: 10);
+        color: dark;
+    }
+}
+
+.iconscards1{
+    color: $darkgrey ;
+
+    &:hover{
+        color: $secondary;
+    }
+}
+
+.goback{
+    font-size: 50px;
+    color: $darkgrey;
+}
+
+.heart{
+    font-size: 80px;
+    color: $dark;
+}
+
+.btnpages{
+    @include flex-justifycenter;
+    border-radius: 60px;
+    border: none;
+    font-size: 37px;
+    color: $light;
+    font-family: 'Roboto';
+    font-weight: 900;
     height: 120px;
     width: 470px;
     margin-left: 23%;
@@ -32,16 +54,6 @@
     &:hover{
         background: lighten($color: $lightprimary , $amount: 10);
         color: dark;
-    }
-}
-
-@mixin icons-infosfooter{
-    @include text-list-style-none;
-    .iconsfooter1{
-        margin-right: 15px;
-    }
-    .iconsfooter2{
-        margin-right: 9px;
     }
 }
 
