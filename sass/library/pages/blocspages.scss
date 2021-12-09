@@ -1,0 +1,79 @@
+@import "/sass/library/utils/measures.scss";
+@import "/sass/library/utils/variables.scss";
+@import "/sass/library/utils/responsive.scss";
+@import "/sass/library/utils/flexbox.scss";
+@import "/sass/library/base/fonts.scss";
+@import "/sass/library/components/icons.scss";
+
+@mixin h2-titles{
+    font-size: 46px;
+    font-weight: 400;
+    margin-top: 60px;
+}
+
+@mixin h2-border-bottom{
+    width: 13%;
+    border-bottom: 3px solid $tertiary;
+}
+
+@mixin menus{
+    box-sizing: border-box;
+    position: relative;
+    top: -125px;
+    background-color: $menu;
+    border-radius: 130px 130px 0px 0px;
+    padding: 50px 40px 0px 40px;
+}
+
+@mixin h3-titles{
+    margin: 0;
+    font-size: 45px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+@mixin articles{
+    border-radius: 37px;
+    box-sizing: border-box;
+    background-color: $light;
+    height: 180px;
+    width: 100%;
+    font-size: 45px;
+    margin-top: 30px;
+    padding: 32px;
+    margin-bottom: 30px;
+    text-overflow: ellipsis;
+}
+
+@mixin cardsrecipe{
+    margin: 0;
+    font-size: 36px;
+}
+
+@mixin prices{
+    width: 20%;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+@mixin footer-title{
+    font-family: 'Shrikhand';
+    font-size: 45px;
+    font-weight: 400 ;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    width: 95%;
+    margin-left: 30px;
+    color: $light;
+    display: flex;
+}
+
+@mixin footer-list {
+    height: auto;
+    font-size: 20px;
+    width: 95%;
+    margin-left: 30px;
+    padding: 0;
+    margin-bottom: 15px;
+    @include icons-infosfooter;
+} 

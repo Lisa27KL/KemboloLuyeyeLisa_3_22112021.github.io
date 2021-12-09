@@ -1,0 +1,27 @@
+@import "/sass/library/utils/measures.scss";
+@import "/sass/library/utils/variables.scss";
+@import "/sass/library/utils/responsive.scss";
+@import "/sass/library/utils/flexbox.scss";
+@import "/sass/library/base/fonts.scss";
+@import "/sass/library/components/icons.scss";
+@import "/sass/library/pages/blocspages.scss";
+
+
+body {
+    font-family: "Roboto";
+    @include margin-padding-nul;
+    @include width-height-100;
+}
+
+header{
+    @include flex-row-aligncen-justispacearound;
+    @include header-width-height;
+}
+
+.goback{
+    @include arrow;
+}
+
+.logo{
+    @include width-height-auto;
+}

@@ -1,0 +1,28 @@
+@import "/sass/library/utils/measures.scss";
+@import "/sass/library/utils/variables.scss";
+@import "/sass/library/utils/responsive.scss";
+@import "/sass/library/utils/flexbox.scss";
+@import "/sass/library/base/fonts.scss";
+@import "/sass/library/components/icons.scss";
+@import "/sass/library/pages/blocspages.scss";
+
+
+footer{
+    text-align: inherit;
+    @include flex-column-flexstart-spaceevenly;
+    @include width-height-100;
+    color: $light;
+    background-color: $dark;
+    
+    h4{
+        @include footer-title;
+    }
+}
+
+footer ul {
+    @include margin-padding-nul;
+}
+
+footer ul li{
+    @include footer-list;
+}

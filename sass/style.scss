@@ -1,7 +1,12 @@
-@import "library/mixins.scss";
-@import "library/functions.scss";
-@import "library/variables.scss";
-@import "library/responsive.scss";
+@import url(/sass/library/utils/variables.scss);
+@import url(/sass/library/utils/mixins.scss);
+@import url(/sass/library/utils/responsive.scss);
+@import url(/sass/library/pages/blocspages.scss);
+@import url(/sass/library/layouts/header.scss);
+@import url(/sass/library/layouts/footer.scss);
+@import url(/sass/library/components/icons.scss);
+@import url(/sass/library/base/fonts.scss);
+
 
 body {
     font-family: "Roboto";
@@ -32,7 +37,6 @@ main{
     .map{
         @include flex-row-aligncenter;
         justify-content: center;
-        padding: 15px 0px;
         background: $location;
         width: 100%;
         height: 115px;
@@ -120,7 +124,7 @@ main img{
 
 }
 
-.onthemenu{
+article{
     @include cardsstyle2;
 
     .new{
@@ -142,15 +146,15 @@ main img{
 }
 
 footer{
+    text-align: inherit;
     @include flex-column-flexstart-spaceevenly;
     @include width-height-100;
     color: $light;
     background-color: $dark;
-    text-align: inherit;
-}
-
-h4{
-    @include footer-title;
+    
+    h4{
+        @include footer-title;
+    }
 }
 
 footer ul {
@@ -161,11 +165,56 @@ footer ul li{
     @include footer-list;
 }
 
-    
 
-    
 
-@media #{$desktop}{
+@media #{$tabs} {
+    .introduction{
+        .map{
+            height: 90px;
+
+            .map-where{
+                font-size: 35px;
+            }
+        }
+
+        h1{
+            width: 100%;
+        }
+    }
+    .btn{
+        height: 85px;
+    }
+
+    h2{
+        font-size: 50px;
+        width: 82%;
+    }
+
+    main img{
+        height: 195px ;
+    }
+
+    .onthemenu{
+        height: 320px;
+        width: 85%;
+
+        .new{
+            padding: 2px;
+            font-size: 20px;
+            margin-top: 15px;
+            right: 60px;
+            
+        }
+    }
+
+    .hearts{
+        height: 65px;
+    }
+
+}  
+
+
+@media #{$desktop} {
     header{
         height: 90px;
     }
@@ -250,12 +299,13 @@ footer ul li{
     main img{
         height: 200px;
     }
-    .onthemenu{
+    
+    article{
         width: 45%;
         height: 305px;
 
         .new{
-            right: 60px;
+            right: 135px;       
         }
     }
 
@@ -287,9 +337,151 @@ footer ul li{
     }
 }
 
-@media #{$tabs} {
-    .introduction, h1, .restosinfos{
-        width:100% ;
-        
+
+
+
+
+main{
+    @include flex-nowrap-column;
+    @include margin-padding-nul;
+    background-color: $menu;
+}
+
+main img{
+   @include width-100-height-100;
+    object-fit: cover;
+}
+
+.titleheart{
+    @include flex-row-aligncen-justispacebet-nowrap;
+    width: 95%;
+}
+
+.hearts{
+    @include heart;
+}
+
+h1{
+    @include font2;
+    font-size: 75px;
+}
+
+.menus{
+    @include menus;
+}
+
+h2{
+    @include h2-titles;
+    @include h2-border-bottom;
+}
+
+article{
+    @include flex-row;
+    @include articles;
+
+}
+
+.cardsmenus{
+    width: 80%;
+    h3{
+        @include h3-titles;
+    }
+    
+    .recipe{
+        @include cardsrecipe;
+    }
+}
+
+.price{
+    @include flex-row-flexend-flexend;
+    @include prices;
+}
+
+.btn{
+    @include flex-justifycenter;
+    @include button;
+}
+
+
+
+@media #{$desktop} {
+    header{
+        height: 90px;
+    }
+
+    .logo{
+        height: 50px;
+    }
+
+    .goback{
+        font-size: 40px;
+    }
+
+    main{
+        @include flex-column-aligncenter;
+        background-color: white;
+    }
+
+    .hearts{
+        font-size: 25px;
+    }
+
+    h1{
+        margin: 10px;
+        font-size: 23px;
+    }
+
+    .menus{
+        position: absolute;
+        top: 130px;
+        width: 35%;
+        border-radius: 20px;
+        padding: 10px 20px 25px 20px;
+    }
+
+    h2{
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    article{
+        border-radius: 20px;
+        height: 65px;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .cardsmenus{
+        h3{
+            font-size: 17px;
+            margin-bottom: 2px;
+        }
+
+        .recipe{
+            font-size: 14px;
+        }
+    }
+
+    .price{
+        font-size: 18px;
+    }
+
+    .btn{
+        margin-left: 37%;
+        height: 40px;
+        width: 25%;
+        margin-top: 36px;
+        font-size: 15px;
+    }
+
+    footer{
+        text-align: center;
+        align-items: center;
+
+        h4{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }

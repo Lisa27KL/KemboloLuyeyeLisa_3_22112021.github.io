@@ -1,7 +1,9 @@
+/* Mixins des détails*/
 @mixin font{
     font-family: 'Roboto';
     font-weight: 900;
 }
+
 @mixin width-height-auto {
     height: auto;
     width: auto;
@@ -32,6 +34,11 @@
     padding-top: 60px;
 }
 
+
+
+
+
+/* Mixins flexbox*/
 @mixin flex-row-aligncenter{
     display: flex;
     flex-direction: row;
@@ -59,6 +66,13 @@
     justify-content: center;
 }
 
+@mixin flex-column-flexstart-spaceevenly{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
 @mixin flex-wrap-column-aligcenter {
     display: flex;
     flex-wrap: wrap;
@@ -72,13 +86,6 @@
     flex-wrap: nowrap;
 }
 
-@mixin flex-column-flexstart-spaceevenly{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-}
-
 @mixin flex-column-stretch{
     display: flex;
     flex-direction: column;
@@ -86,12 +93,15 @@
 }
 
 @mixin flex-column-aligncenter {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
+
+
+/* Mixins des éléments*/
 
 @mixin button{
     @include flex-justifycenter;
@@ -213,7 +223,7 @@
 
 @mixin footer-title{
     font-family: 'Shrikhand';
-    font-size: 30px;
+    font-size: 45px;
     font-weight: 400 ;
     margin-bottom: 10px;
     margin-top: 15px;
@@ -225,7 +235,7 @@
 
 @mixin footer-list {
     height: auto;
-    font-size: 15px;
+    font-size: 20px;
     width: 95%;
     margin-left: 30px;
     padding: 0;

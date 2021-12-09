@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="stylepage.css" type="text/css" />
         <script src="https://kit.fontawesome.com/4a7af62695.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
@@ -14,86 +14,108 @@
 
     <body>
         <header>
-            <img src="images/logo/ohmyfood.png" alt="Logo OhMyFood"/>
+            <a href="accueil.html"><i class="fas fa-arrow-left goback"></i></a><img class="logo" src="images/logo/ohmyfood.png" alt="Logo OhMyFood"/>
         </header>
 
         <main>
             <img src="images/restaurants/menu4.jpg" alt="Le délice des sens"/>
-            <h1>Le délice des sens</h1>
-            <a href="#favoris"><i class="far fa-heart"></i></a>
+            
+            <div class="menus">
+                <div class="titleheart">
+                    <h1>Le délice des sens</h1>
+                    <a href="#favoris"><i class="far fa-heart hearts"></i></a>
+                </div>
 
-            <section>
-                <h2>ENTRÉES</h2>
-                <article>
-                    <h3>Tartare de thon</h3>
-                    <p>Assaisonné au yuzu</p>
-                    <p>25€</p>
-                </article>
+                <section>
+                    <h2>ENTRÉES</h2>
+                    <article>
+                        <div class="cardsmenus">
+                            <h3>Tartare de thon</h3>
+                            <p class="recipe">Assaisonné au yuzu</p>
+                        </div>
+                        <p class="price">25€</p>
+                    </article>
 
-                <article>
-                    <h3>Bouchée de homard croustillant</h3>
-                    <p>Et sa farandole de petits légumes</p>
-                    <p>35€</p>
-                </article>
+                    <article>
+                        <div class="cardsmenus">
+                            <h3>Bouchée de homard croustillant</h3>
+                            <p class="recipe">Et sa farandole de petits légumes</p>
+                        </div>
+                        <p class="price">35€</p>
+                    </article>
 
-                <article>
-                    <h3>Velouté de cèpes</h3>
-                    <p>Aux truffes</p>
-                    <p>20€</p>
-                </article>
-            </section>
+                    <article>
+                        <div class="cardsmenus">
+                            <h3>Velouté de cèpes</h3>
+                            <p class="recipe">Aux truffes</p>
+                        </div>
+                        <p class="price">20€</p>
+                    </article>
+                </section>
 
-            <section>
-                <h2>PLATS</h2>
-                <article>
-                    <h3>Poulet rôti aux herbes de Provence</h3>
-                    <p>Et sa crème de truffe</p>
-                    <p>40€</p>
-                </article>
+                <section>
+                    <h2>PLATS</h2>
+                    <article>
+                        <div class="cardsmenus">
+                            <h3>Poulet rôti aux herbes de Provence</h3>
+                            <p class="recipe">Et sa crème de truffe</p>
+                        </div>
+                        <p class="price">40€</p>
+                    </article>
 
-                <article>
-                    <h3>Langoustine rôtie</h3>
-                    <p>Et ses légumes de saison</p>
-                    <p>35€</p>
-                </article>
+                    <article>
+                        <div class="cardsmenus">
+                            <h3>Langoustine rôtie</h3>
+                            <p class="recipe">Et ses légumes de saison</p>
+                        </div>
+                        <p class="price">35€</p>
+                    </article>
 
-                <article>
-                    <h3>Côte de boeuf Angus</h3>
-                    <p>Et sa purée de panais</p>
-                    <p>44€</p>
-                </article>
-            </section>
+                    <article>
+                        <div class="cardsmenus">
+                            <h3>Côte de boeuf Angus</h3>
+                            <p class="recipe">Et sa purée de panais</p>
+                        </div>
+                        <p class="price">44€</p>
+                    </article>
+                </section>
 
-            <section>
-                <h2>DESSERTS</h2>
-                <article>
-                    <h3>Farandole de desserts</h3>
-                    <p>Du chef</p>
-                    <p>18€</p>
-                </article>
+                <section>
+                    <h2>DESSERTS</h2>
+                    <article>
+                        <div class="cardsmenus">
+                            <h3>Farandole de desserts</h3>
+                            <p class="recipe">Du chef</p>
+                        </div>
+                        <p class="price">18€</p>
+                    </article>
 
-                <article>
-                    <h3>Crème brulée</h3>
-                    <p>Revisitée</p>
-                    <p>22€</p>
-                </article>
+                    <article>
+                        <div class="cardsmenus">
+                            <h3>Crème brulée</h3>
+                            <p class="recipe">Revisitée</p>
+                        </div>
+                        <p class="price">22€</p>
+                    </article>
 
-                <article>
-                    <h3>Tiramisu</h3>
-                    <p>À la noisette</p>
-                    <p>23€</p>
-                </article>
-            </section>
-            <button>Commander</button>
-
+                    <article>
+                        <div class="cardsmenus">
+                            <h3>Tiramisu</h3>
+                            <p class="recipe">À la noisette</p>
+                        </div>
+                        <p class="price">23€</p>
+                    </article>
+                </section>
+                <input class="btn" type="button" value="Commander"/>
+            </div>
         </main>
         <footer>
             <h4>ohmyfood</h4>
             <ul>
-              <li><a><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
-              <li><a><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
-              <li><a>Mentions légales</a></li>
-              <li><a>Contact</a></li>
+                <li><a><i class="fas fa-utensils iconsfooter1"></i>Proposer un restaurant</a></li>
+                <li><a><i class="fas fa-hands-helping iconsfooter2"></i>Devenir partenaire</a></li>
+                <li><a>Mentions légales</a></li>
+                <li><a>Contact</a></li>
             </ul>
         </footer>
     </body>
