@@ -1,21 +1,6 @@
-@mixin text-list-style-none{
-    list-style: none;
-    text-decoration: none;
-}
-
-@mixin width-height-auto {
-    height: auto;
-    width: auto;
-}
-
 @mixin width-height-100{
     width: 100%;
     height: auto;
-}
-
-@mixin header-width-height{
-    width: 75%;
-    height: 170px;
 }
 
 @mixin margin-padding-nul{
@@ -23,10 +8,6 @@
     padding: 0;
 }
 
-@mixin margin-sections-blanches{
-    margin-bottom: 60px;
-    margin-top: 60px;
-}
 
 @mixin padding-sections-colorees{
     padding-bottom: 90px;

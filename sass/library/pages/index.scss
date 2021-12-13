@@ -38,7 +38,9 @@
 .functioning{
     @include width-height-100;
     @include flex-wrap-column-aligcenter;
-    @include margin-sections-blanches;
+    background-color: $light;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 .cards1{
@@ -66,7 +68,8 @@ ol{
     @include margin-padding-nul;
 }
 ol li {
-    @include text-list-style-none;
+    list-style: none;
+    text-decoration: none;
     counter-increment: mycounter;
 }
 
@@ -143,10 +146,5 @@ main .imgmenus{
     width: 90%;
     height: 90%;
     margin-left: 30px;
-
-    .designinfosmenus{
-        margin: 6px;
-        padding: 0;
-    }
 }
 

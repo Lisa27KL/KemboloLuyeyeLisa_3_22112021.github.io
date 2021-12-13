@@ -1,12 +1,15 @@
-$desktop: "only screen and (min-width:1200px)";
 
-@media #{$desktop} {
+@media all and (min-width:1200px){
     header{
         height: 90px;
+        justify-content: center;
     }
 
-    .logo{
-        height: 50px;
+    .logo {
+        height: 45px;
+        width: 22%;
+        margin-left: 13%;
+        margin-right: 13%;
     }
 
     .introduction{
@@ -19,7 +22,7 @@ $desktop: "only screen and (min-width:1200px)";
         
             .iconmap {
                 font-size: 20px;
-                margin-left: 12%;
+                margin-left: 10%;
             }
 
             .map-where{
@@ -29,35 +32,51 @@ $desktop: "only screen and (min-width:1200px)";
         }
     }
     
-    h1{
+    .h1index{
         width: 100%;
-        font-size: 35px;
+        font-size: 30px;
+        margin: 0;
+        margin-top: 25px;
+        
     }
-    .restosinfos{
-        font-size: 22px;
+
+    .introduction{
+        padding-bottom: 40px;
+        .restosinfos{
+            font-size: 20px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
     }
     
     .btn{
-        height: 65px;
-        width: 360px;
-        font-size: 27px;
-        margin-top: 20px;
+        height: 40px;
+        width: 20%;
+        margin: 0px;
+        margin-top: 10px;
+        margin-left: 0;
+        font-size: 15px;
     }
+    
+    
 
     .functioning{
-        margin-top: 50px;
-        margin-bottom: 50px;
+        padding-bottom: 35px;
+        padding-top: 30px;
+
     }
 
-    h2{
-        font-size: 30px;
+    .h2index{
+        font-size: 25px;
         width: 95%;
     }
     .cards1{
-        height: 55px;
-        width: 323px;
-        font-size: 18px;
+        height: 50px;
+        width: 235px;
+        font-size: 15px;
         align-content: center;
+        margin-top: 20px;
+        margin-bottom: 0;
     }
     .infoscards1{
         margin-right: 30px;
@@ -73,69 +92,53 @@ $desktop: "only screen and (min-width:1200px)";
     ol li::before{
         width: 35px;
         height: 35px;
-        margin-left: -40px;
+        margin-left: -30px;
     }
    
     .restaurants{
+        padding-top: 30px;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
     }
 
-    main img{
-        height: 200px;
+    main .imgmenus{
+        height: 190px;
     }
     
-    article{
+    .cards2{
         width: 45%;
-        height: 305px;
-
-        .new{
-            right: 135px;       
-        }
+        height: 275px;
+        margin-top: 30px;
+        padding: 0;
+        
     }
 
+    .new{
+        right: 135px;
+        padding: 3px;
+        font-size: 15px;
+        margin-top: 16px;  
+    }
     .menu{
         width: 70%;
     }
 
     .infosmenus{
         height: auto;
+    }
 
-        .designinfosmenus{
-            font-size: 25px;
-        }
+    .h3index{
+        font-size: 20px;
+        
     }
 
     .hearts{
-        font-size: 45px;
-    }
-    
-    
-    footer{
-        text-align: center;
-        align-items: center;
-        @include margin-padding-nul;
-
-        h4{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-}
-
-
-/*restaurant's pages*/
-
-@media #{$desktop} {
-    header{
-        height: 90px;
+        font-size: 40px;
     }
 
-    .logo{
-        height: 50px;
-    }
+
+    /*pages menus*/
 
     .goback{
         font-size: 40px;
@@ -146,29 +149,30 @@ $desktop: "only screen and (min-width:1200px)";
         background-color: white;
     }
 
-    .hearts{
-        font-size: 25px;
+    .titleheart{
+        align-items: baseline;
     }
 
-    h1{
+    .h1pages{
         margin: 10px;
-        font-size: 23px;
+        font-size: 26px;
     }
 
     .menus{
         position: absolute;
         top: 130px;
-        width: 35%;
+        width: 55%;
         border-radius: 20px;
         padding: 10px 20px 25px 20px;
     }
 
-    h2{
+    .h2pages{
         font-size: 15px;
         margin-top: 0;
+        width: 4%;
     }
 
-    article{
+    .articlespages{
         border-radius: 20px;
         height: 65px;
         font-size: 15px;
@@ -176,7 +180,7 @@ $desktop: "only screen and (min-width:1200px)";
     }
 
     .cardsmenus{
-        h3{
+        .h3pages{
             font-size: 17px;
             margin-bottom: 2px;
         }
@@ -190,11 +194,23 @@ $desktop: "only screen and (min-width:1200px)";
         font-size: 18px;
     }
 
-    .btn{
+    .btnpages{
         margin-left: 37%;
         height: 40px;
         width: 25%;
         margin-top: 36px;
         font-size: 15px;
+    }
+
+    footer{
+        text-align: center;
+        align-items: center;
+        @include margin-padding-nul;
+
+        h4{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }

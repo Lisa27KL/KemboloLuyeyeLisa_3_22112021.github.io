@@ -4,10 +4,12 @@ footer{
     @include width-height-100;
     color: $light;
     background-color: $dark;
+    
 }
 
 footer ul {
     @include margin-padding-nul;
+    
 }
 
 footer ul li{
@@ -17,14 +19,18 @@ footer ul li{
     margin-left: 30px;
     padding: 0;
     margin-bottom: 15px;
+    list-style: none;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: $light;
 }
 
 .iconsfooter1{
     margin-right: 15px;
-    @include text-list-style-none;
 
 }
 .iconsfooter2{
     margin-right: 9px;
-    @include text-list-style-none;
 }

@@ -1,35 +1,63 @@
-$tabs: "only screen and (min-width:768px)";
+@media all and (min-width:768px){
+    header{
+        height: 125px;
+    }
 
-@media #{$tabs} {
+    .logo{
+        width: 50%;
+        height: 80px;
+        margin-right: 110px;
+    }
+
+
     .introduction{
         .map{
-            height: 90px;
+            height: 80px;
 
             .map-where{
                 font-size: 35px;
             }
         }
 
-        h1{
-            width: 100%;
+        .restosinfos{
+            font-size: 35px;
         }
+
+        
     }
+
+    .h1index{
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 0px;
+        font-size: 45px;
+    }
+
+    .h2index{
+        font-size: 60px;
+        width: 82%;
+    }
+
     .btn{
         height: 85px;
     }
 
-    h2{
-        font-size: 50px;
-        width: 82%;
+    .cards1{
+        height: 140px;
+        width: 730px;
+        font-size: 40px;
+    }
+    .restaurants{
+        padding-top: 50px;
     }
 
-    main img{
-        height: 195px ;
+    main .imgmenus{
+        height: 325px ;
     }
 
-    .onthemenu{
-        height: 320px;
-        width: 85%;
+    .cards2{
+        height: 480px;
+        width: 90%;
 
         .new{
             padding: 2px;
@@ -44,4 +72,18 @@ $tabs: "only screen and (min-width:768px)";
         height: 65px;
     }
 
+    .bntpages{
+        margin-left: 25%;
+    }
+    footer{
+        text-align: center;
+        align-items: center;
+        @include margin-padding-nul;
+
+        h4{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }  

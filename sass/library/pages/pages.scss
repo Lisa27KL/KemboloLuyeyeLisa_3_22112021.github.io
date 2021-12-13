@@ -39,9 +39,6 @@ main .imgpages{
 
 .cardsmenus{
     width: 80%;
-    h3{
-        @include h3-titles;
-    }
     
     .recipe{
         margin: 0;
