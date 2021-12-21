@@ -3,7 +3,9 @@ footer{
     @include flex-column-flexstart-spaceevenly;
     @include width-height-100;
     color: $light;
-    background-color: $dark;
+    background-color: $darkgrey;
+    position: relative;
+    box-sizing: border-box;
     
 }
 

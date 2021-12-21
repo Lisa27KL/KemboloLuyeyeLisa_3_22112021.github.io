@@ -6,6 +6,7 @@ body {
 
 main{
     @include flex-column-stretch;
+    position: relative;
 }
 
 .h1index{
@@ -19,14 +20,14 @@ main{
 
 .h2index{
     font-size: 65px;
-    width: 87%;
+    width: 100%;
     margin-top: 0;
     margin-bottom: 0px;
 }
 
 .h3index{
-    font-size: 40px;
-    margin: 6px;
+    font-size: 50px;
+    margin: 4px;
     padding: 0;
 }
 
@@ -48,6 +49,9 @@ main{
     font-size: 45px;
     margin-top: 0;
     margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 h4{

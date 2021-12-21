@@ -16,6 +16,7 @@ main .imgpages{
 }
 
 .menus{
+    
     box-sizing: border-box;
     position: relative;
     top: -125px;
@@ -33,9 +34,45 @@ main .imgpages{
     width: 100%;
     font-size: 45px;
     padding: 32px;
+    margin-top: 30px;
     margin-bottom: 30px;
     text-overflow: ellipsis;
+    animation:  slideup 3s;
 }
+
+.slideup {
+	-webkit-animation: slide-in-bottom 3s 2s forwards;
+	        animation: slide-in-bottom 3s 2s forwards;
+}
+
+@-webkit-keyframes slideup {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideup {
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+}
+  
+  
+
 
 .cardsmenus{
     width: 80%;
@@ -43,12 +80,17 @@ main .imgpages{
     .recipe{
         margin: 0;
         font-size: 36px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
 .price{
     @include flex-row-flexend-flexend;
+    align-items: center;
     width: 20%;
+    height: 25px;
     margin-bottom: 0;
     font-weight: 600;
 }

@@ -103,29 +103,67 @@
     }
 
     main .imgmenus{
-        height: 190px;
+        height: 205px;
+        border-radius: 25px 25px 0 0;
     }
     
     .cards2{
-        width: 45%;
+        width: 23%;
         height: 275px;
         margin-top: 30px;
         padding: 0;
-        
+        border-radius: 25px;
+        animation: slide-in-fwd-center 3s;
     }
 
-    .new{
-        right: 135px;
-        padding: 3px;
-        font-size: 15px;
-        margin-top: 16px;  
+    .slide-in-fwd-center {
+        -webkit-animation: slide-in-fwd-center 2s forwards;
+                animation: slide-in-fwd-center 2s forwards;
     }
+    
+    @-webkit-keyframes slide-in-fwd-center {
+        0% {
+          -webkit-transform: translateZ(-1400px);
+                  transform: translateZ(-1400px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          opacity: 1;
+        }
+    }
+    @keyframes slide-in-fwd-center {
+        0% {
+          -webkit-transform: translateZ(-1400px);
+                  transform: translateZ(-1400px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          opacity: 1;
+        }
+    }
+
+    .new::before{
+        right: 10px;
+        margin-top: 10px;
+        padding: 6px;
+        font-size: 20px;
+    }
+
+
     .menu{
         width: 70%;
     }
 
     .infosmenus{
         height: auto;
+        margin-left: 10px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
     }
 
     .h3index{
@@ -133,10 +171,16 @@
         
     }
 
-    .hearts{
+    .emptyhearts{
         font-size: 40px;
+        left: 41px;
     }
 
+    .fullhearts{
+        font-size: 42px;
+    }
+
+    
 
     /*pages menus*/
 
@@ -151,17 +195,23 @@
 
     .titleheart{
         align-items: baseline;
+        justify-content: center;
     }
 
     .h1pages{
-        margin: 10px;
-        font-size: 26px;
+        margin: 15px;
+        font-size: 30px;
     }
 
     .menus{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: baseline;
         position: absolute;
         top: 130px;
-        width: 55%;
+        width: 80%;
         border-radius: 20px;
         padding: 10px 20px 25px 20px;
     }
@@ -169,14 +219,15 @@
     .h2pages{
         font-size: 15px;
         margin-top: 0;
-        width: 4%;
+        width: 10%;
     }
 
     .articlespages{
         border-radius: 20px;
-        height: 65px;
+        height: 75px;
         font-size: 15px;
         padding: 10px;
+        margin-top: 30px;
     }
 
     .cardsmenus{
@@ -195,10 +246,11 @@
     }
 
     .btnpages{
-        margin-left: 37%;
+        margin-left: 0%;
         height: 40px;
         width: 25%;
         margin-top: 36px;
+        margin-bottom: 15px;
         font-size: 15px;
     }
 
@@ -206,7 +258,7 @@
         text-align: center;
         align-items: center;
         @include margin-padding-nul;
-
+        top: 0;
         h4{
             display: flex;
             flex-direction: column;
