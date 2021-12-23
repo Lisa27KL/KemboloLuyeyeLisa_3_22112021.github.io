@@ -28,7 +28,7 @@
   font-family: "Roboto";
   font-size: 40px;
   font-weight: 500;
-  color: #363636;
+  color: #505050;
 }
 .introduction .restosinfos {
   font-family: "Roboto";
@@ -70,8 +70,14 @@
   margin-left: 0;
   box-shadow: 1px 6px 20px 7px #d3d3d3;
 }
+.cards1 .iconscards1 {
+  color: #505050;
+}
 .cards1:hover {
-  background: #f3d9f3;
+  background: #ecc6ec;
+}
+.cards1:hover .iconscards1 {
+  color: #9356DC;
 }
 
 ol {
@@ -234,7 +240,6 @@ main .imgpages {
   padding: 32px;
   margin-top: 30px;
   margin-bottom: 30px;
-  text-overflow: ellipsis;
   animation: slideup 3s;
 }
 
@@ -269,25 +274,50 @@ main .imgpages {
 }
 .cardsmenus {
   width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .cardsmenus .recipe {
   margin: 0;
   font-size: 36px;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .price {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
   justify-content: flex-end;
-  align-items: center;
   width: 20%;
-  height: 25px;
-  margin-bottom: 0;
+  height: 110px;
+  margin: 0px;
   font-weight: 600;
+  overflow: hidden;
+  transition: all 1s;
+  align-items: flex-end;
+}
+
+.checked {
+  color: white;
+  background-color: #99E2D0;
+  height: 180px;
+  width: 0;
+  border-radius: 0 35px 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -31px;
+  left: 35px;
+  visibility: hidden;
+  transition: all 1s;
+}
+
+.cardsmenus .recipe:hover .price {
+  font-size: 35px;
+}
+.cardsmenus .recipe:hover .checked {
+  width: 150px;
+  visibility: visible;
 }
 
 body {
@@ -366,7 +396,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   height: 170px;
   position: fixed;
@@ -383,7 +413,7 @@ header {
 }
 
 footer {
-  text-align: inherit;
+  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -391,8 +421,7 @@ footer {
   width: 100%;
   height: auto;
   color: white;
-  background-color: #363636;
-  position: relative;
+  background-color: #505050;
   box-sizing: border-box;
 }
 
@@ -437,18 +466,11 @@ footer ul a {
   width: 470px;
   margin-top: 25px;
   background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0px 0px 12px 0px #363636;
+  box-shadow: 0px 0px 12px 0px #505050;
 }
 .btn:hover {
   background: #f3d9f3;
   color: dark;
-}
-
-.iconscards1 {
-  color: #363636;
-}
-.iconscards1:hover {
-  color: #9356DC;
 }
 
 .new {
@@ -470,8 +492,11 @@ footer ul a {
 }
 
 .goback {
-  font-size: 50px;
-  color: #363636;
+  font-size: 55px;
+  color: #505050;
+  position: absolute;
+  left: 45px;
+  top: 37px;
 }
 
 .emptyhearts {
@@ -503,26 +528,6 @@ footer ul a {
   opacity: 1;
 }
 
-.checked {
-  border-radius: 37px;
-  box-sizing: border-box;
-  background-color: #99E2D0;
-  height: 180px;
-  width: 100%;
-  font-size: 45px;
-  padding: 32px;
-  margin-bottom: 30px;
-  width: 100%;
-  visibility: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  position: absolute;
-  top: 0px;
-  left: 0;
-  padding-right: 85px;
-}
-
 .btnpages {
   display: flex;
   justify-content: center;
@@ -537,7 +542,7 @@ footer ul a {
   margin-top: 100px;
   margin-left: 23%;
   background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0px 0px 12px 0px #363636;
+  box-shadow: 0px 0px 12px 0px #505050;
   transform: scale(1);
   transition: opacity 5ms;
 }
@@ -553,7 +558,6 @@ footer ul a {
   .logo {
     width: 50%;
     height: 80px;
-    margin-right: 110px;
   }
 
   .introduction .map {
@@ -603,20 +607,12 @@ footer ul a {
   .bntpages {
     margin-left: 25%;
   }
-
-  footer {
-    text-align: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-  footer h4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 @media all and (min-width: 1200px) {
+  body {
+    max-width: 1345px;
+  }
+
   header {
     height: 90px;
     justify-content: center;
@@ -624,9 +620,7 @@ footer ul a {
 
   .logo {
     height: 45px;
-    width: 22%;
-    margin-left: 13%;
-    margin-right: 13%;
+    width: 25%;
   }
 
   .introduction {

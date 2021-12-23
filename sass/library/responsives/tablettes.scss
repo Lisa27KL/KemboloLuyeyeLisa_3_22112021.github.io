@@ -6,7 +6,6 @@
     .logo{
         width: 50%;
         height: 80px;
-        margin-right: 110px;
     }
 
 
@@ -64,15 +63,5 @@
     .bntpages{
         margin-left: 25%;
     }
-    footer{
-        text-align: center;
-        align-items: center;
-        @include margin-padding-nul;
 
-        h4{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
 }  

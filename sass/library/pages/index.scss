@@ -57,9 +57,15 @@
     margin-bottom: 45px;
     margin-left: 0;
     box-shadow: 1px 6px 20px 7px $shadow;
+    .iconscards1{
+        color: $darkgrey ;
+    }
 
     &:hover{
-        background: lighten($color: $lightprimary, $amount: 10);
+        background: lighten($color: $lightprimary, $amount: 5);
+        .iconscards1{
+            color: $secondary;
+        }
     }
     
 }

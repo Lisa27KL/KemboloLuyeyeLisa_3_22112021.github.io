@@ -18,13 +18,7 @@
     }
 }
 
-.iconscards1{
-    color: $darkgrey ;
 
-    &:hover{
-        color: $secondary;
-    }
-}
 
 .new{
     position: relative;
@@ -46,8 +40,11 @@
 }
 
 .goback{
-    font-size: 50px;
+    font-size: 55px;
     color: $darkgrey;
+    position: absolute;
+    left: 45px;
+    top: 37px;
 }
 
 .emptyhearts{
@@ -78,27 +75,6 @@
     cursor: pointer;
     opacity: 1;
 }
-
-.checked{
-    border-radius: 37px;
-    box-sizing: border-box;
-    background-color: $tertiary;
-    height: 180px;
-    width: 100%;
-    font-size: 45px;
-    padding: 32px;
-    margin-bottom: 30px;
-    width: 100%;
-    visibility: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    padding-right: 85px;
-}
-
 
   
 .btnpages{

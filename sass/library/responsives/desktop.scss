@@ -1,5 +1,9 @@
 
 @media all and (min-width:1200px){
+
+    body{
+        max-width: 1345px;
+    }
     header{
         height: 90px;
         justify-content: center;
@@ -7,9 +11,7 @@
 
     .logo {
         height: 45px;
-        width: 22%;
-        margin-left: 13%;
-        margin-right: 13%;
+        width: 25%;
     }
 
     .introduction{
