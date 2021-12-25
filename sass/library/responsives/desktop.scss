@@ -70,7 +70,7 @@
 
     .h2index{
         font-size: 25px;
-        width: 95%;
+        width: 98%;
     }
     .cards1{
         height: 50px;
@@ -173,15 +173,14 @@
         
     }
 
-    .emptyhearts{
+    .hearts{
         font-size: 40px;
-        left: 41px;
-    }
+        margin-left: 40px;
 
-    .fullhearts{
-        font-size: 42px;
     }
-
+    .hearts:hover{
+        font-size: 45px;
+    }
     
 
     /*pages menus*/
@@ -224,27 +223,36 @@
         width: 10%;
     }
 
+    .meals{
+        width: 30%;
+    }
+
     .articlespages{
         border-radius: 20px;
         height: 75px;
         font-size: 15px;
-        padding: 10px;
         margin-top: 30px;
     }
 
     .cardsmenus{
-        .h3pages{
-            font-size: 17px;
-            margin-bottom: 2px;
-        }
+        padding: 10px;
+        justify-content: space-around;
+        align-content: space-between;
+    
+    }
 
-        .recipe{
-            font-size: 14px;
-        }
+    .h3pages{
+        font-size: 17px;
+        margin-bottom: 2px;
+    }
+
+    .recipe{
+        font-size: 14px;
     }
 
     .price{
         font-size: 18px;
+        height: auto;
     }
 
     .btnpages{
@@ -254,6 +262,12 @@
         margin-top: 36px;
         margin-bottom: 15px;
         font-size: 15px;
+    }
+
+    .check{
+        box-sizing: border-box;
+        width: 80px;
+        border-radius: 0 20px 20px 0;
     }
 
     footer{

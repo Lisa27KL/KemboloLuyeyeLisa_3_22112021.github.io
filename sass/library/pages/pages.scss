@@ -33,9 +33,10 @@ main .imgpages{
     height: 180px;
     width: 100%;
     font-size: 45px;
-    padding: 32px;
     margin-top: 30px;
     margin-bottom: 30px;
+    flex-wrap: nowrap;
+    box-shadow: 3px 6px 8px $shadow;
     animation:  slideup 3s;
 }
 
@@ -73,60 +74,61 @@ main .imgpages{
 
 
 .cardsmenus{
-    width: 80%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 25px;
+}
+
+.recipe{
+    margin: 0;
+    font-size: 36px;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    .recipe{
-        margin: 0;
-        font-size: 36px;
-        white-space: nowrap;
-    }
-
 }
 
 .price{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 20%;
-    height: 110px;
     margin: 0px;
     font-weight: 600;
-    overflow: hidden;
-    transition: all 1s;
     align-items: flex-end;
-   
+    height: 116px;
 }
 
+.mealprice{
+    margin: 0;
+}
 
-.checked{
-    color: $light;
-    background-color: $tertiary;
-    height: 180px;
-    width: 0;
+.check{
+    width: 120px;
     border-radius: 0 35px 35px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: -31px;
-    left: 35px;
+    background-color: $tertiary; 
+    transition: .7s ease-in-out;
+    margin-right: -40px;
     visibility: hidden;
-    transition: all 1s;
-
 }
 
-.cardsmenus .recipe:hover{
-    .price{
-        font-size: 35px;
-    }
-
-    .checked{
-        width: 150px;
-        visibility: visible;
-    }
+.check i {
+    color: $light;
+    transform: rotate(360deg);
+    transition: .7s;
 }
 
-
+.articlespages:hover .check{
+    margin-right: 0;
+    visibility: visible;
+}
+.articlespages:hover .fas{
+    transform: rotate(0deg);
+}
 
 
