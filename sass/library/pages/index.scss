@@ -38,9 +38,14 @@
 .functioning{
     @include width-height-100;
     @include flex-wrap-column-aligcenter;
+    align-content: space-around;
     background-color: $light;
     padding-bottom: 60px;
     padding-top: 60px;
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 95%;
+    
 }
 
 .cards1{
@@ -50,12 +55,13 @@
     box-sizing: border-box;
     background-color: $background;
     height: 160px;
-    width: 790px;
-    font-size: 45px;
+    width: 100%;
+    font-size: 50px;
     @include flex-row-center-spaceevenly-wrap;
     margin-top: 45px;
     margin-bottom: 45px;
     margin-left: 0;
+    margin-right: 0;
     box-shadow: 1px 6px 20px 7px $shadow;
     .iconscards1{
         color: $darkgrey ;
@@ -72,6 +78,7 @@
 
 ol{
     @include margin-padding-nul;
+    width: 90%;
 }
 ol li {
     list-style: none;
@@ -96,9 +103,13 @@ ol li::before{
 
 .restaurants{
     @include flex-wrap-column-aligcenter;
-    @include width-height-100;
+    width: 95%;
+    height: auto;
     @include padding-sections-colorees;
     background-color: $background;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 50px;
 }
 
 main .imgmenus{

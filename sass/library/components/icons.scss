@@ -1,3 +1,30 @@
+.cookie{
+    font-size: 160px;
+    color: #fbcf9cd1;
+    position: absolute;
+    text-shadow: -2px 0 transparent, 0 2px transparent, 2px 0 transparent, 0 -2px transparent;
+    top: 285px;
+    z-index: 1;
+}
+
+.bitedcookie{
+    font-size: 160px;
+    position: relative;
+    top: 25px;
+    color: #cd8e458a;
+    z-index: 2;
+    text-shadow: -2px 0 #00000047;
+}
+
+.loading_store{
+    font-size: 90px;
+    position: relative;
+    top: -121px;
+    z-index: 3;
+    color: #a7ffe9ad;
+    text-shadow: 4px 0 #0000003d, 0 7px #00000012, 9px 0 transparent, 0 8px transparent;}
+
+
 .btn{
     @include flex-justifycenter;
     border-radius: 60px;
@@ -9,7 +36,6 @@
     width: 470px;
     margin-top: 25px;
     background:linear-gradient($primary, $secondary);
-
     box-shadow: 0px 0px 12px 0px $darkgrey;
     
     &:hover{
@@ -52,15 +78,18 @@
     color: $light;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black  ;
     cursor: pointer;
+    
 }
 
 .hearts:hover{
     font-size: 70px;
-    color: $secondary;
+    color: transparent;
     background:linear-gradient($primary, $secondary);
+    box-sizing: border-box;
     text-shadow: none;
-    -webkit-text-fill-color: transparent;    
-    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;    
     transition: heartscolors 300ms ease-in-out;
 }
 
