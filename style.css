@@ -388,24 +388,30 @@ body .loading {
 
 @-webkit-keyframes loading-title-anim {
   0% {
-    opacity: 0;
-  }
-  50% {
     opacity: 1;
+    z-index: 1;
+  }
+  80% {
+    opacity: 1;
+    z-index: 1;
   }
   100% {
     opacity: 0;
+    z-index: -2;
   }
 }
 @keyframes loading-title-anim {
   0% {
-    opacity: 0;
-  }
-  50% {
     opacity: 1;
+    z-index: 1;
+  }
+  80% {
+    opacity: 1;
+    z-index: 1;
   }
   100% {
     opacity: 0;
+    z-index: -2;
   }
 }
 .loading .loading_title {
@@ -457,8 +463,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  position: relative;
-  z-index: 2;
+  position: static;
+  z-index: 3;
   animation: z-index-anim-main 0ms 3500ms linear both;
 }
 
@@ -543,10 +549,9 @@ header {
   justify-content: center;
   width: 100%;
   height: 170px;
-  position: fixed;
+  position: sticky;
   background: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  position: sticky;
   top: 0;
   z-index: 2;
   box-sizing: border-box;
@@ -880,10 +885,6 @@ footer ul a {
   }
 }
 @media all and (min-width: 1200px) {
-  body {
-    max-width: 1345px;
-  }
-
   header {
     height: 90px;
     justify-content: center;
@@ -929,7 +930,7 @@ footer ul a {
 
   .btn {
     height: 40px;
-    width: 20%;
+    width: 250px;
     margin: 0px;
     margin-top: 10px;
     margin-left: 0;
@@ -1132,7 +1133,7 @@ footer ul a {
   .btnpages {
     margin-left: 0%;
     height: 40px;
-    width: 25%;
+    width: 260px;
     margin-top: 36px;
     margin-bottom: 15px;
     font-size: 25px;
