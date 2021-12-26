@@ -1,29 +1,139 @@
 .cookie{
     font-size: 160px;
-    color: #fbcf9cd1;
+    color:  #fdcf99;
     position: absolute;
     text-shadow: -2px 0 transparent, 0 2px transparent, 2px 0 transparent, 0 -2px transparent;
     top: 285px;
     z-index: 1;
+    animation: cookie-swing 6s ease-in-out infinite ;
 }
+
+.cookie_swing {
+	-webkit-animation: cookie-swing 6s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0s infinite ;
+	        animation: cookie-swing 6s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0s infinite ;
+}
+
+@-webkit-keyframes cookie-swing {
+    0% {
+        -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+              transform-origin: top;
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+              transform-origin: top;
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+              transform-origin: top;
+        opacity: 0;
+    }
+}
+@keyframes cookie-swing {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    60% {
+        -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+              transform-origin: top;
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+              transform-origin: top;
+        opacity: 0;
+    }
+}
+  
 
 .bitedcookie{
     font-size: 160px;
     position: relative;
     top: 25px;
-    color: #cd8e458a;
+    color: #9f7d57a1;
     z-index: 2;
     text-shadow: -2px 0 #00000047;
+    animation: bitedcookie-swing  4s 2s ease-in-out infinite;
 }
 
+.bitedcookie-swing {
+	-webkit-animation: bitedcookie-swing 4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 2s infinite ;
+	        animation: bitedcookie-swing 4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 2s infinite;
+}
+
+@-webkit-keyframes bitedcookie-swing {
+    0% {
+        -webkit-transform: rotateX(70deg);
+              transform: rotateX(70deg);
+        -webkit-transform-origin: top;
+              transform-origin: top;
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+              transform-origin: top;
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotateX(-70deg);
+              transform: rotateX(-70deg);
+        -webkit-transform-origin: top;
+              transform-origin: top;
+        opacity: 0;
+    }
+}
+
+@keyframes bitedcookie-swing  {
+    0% {
+        -webkit-transform: rotateX(70deg);
+              transform: rotateX(70deg);
+        -webkit-transform-origin: top;
+              transform-origin: top;
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+              transform-origin: top;
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotateX(-70deg);
+              transform: rotateX(-70deg);
+        -webkit-transform-origin: top;
+              transform-origin: top;
+        opacity: 0;
+    }
+}
+  
 .loading_store{
     font-size: 90px;
     position: relative;
     top: -121px;
     z-index: 3;
     color: #a7ffe9ad;
-    text-shadow: 4px 0 #0000003d, 0 7px #00000012, 9px 0 transparent, 0 8px transparent;}
+    text-shadow: 4px 0 #0000003d, 0 7px #00000012, 9px 0 transparent, 0 8px transparent;
+    visibility: hidden;
 
+}
 
 .btn{
     @include flex-justifycenter;
@@ -43,8 +153,6 @@
         color: dark;
     }
 }
-
-
 
 .new{
     position: relative;

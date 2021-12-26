@@ -378,28 +378,106 @@ body .loading {
   z-index: 1;
   background-color: transparent;
   padding: 20px;
-  text-shadow: 7px -5px #00000080, -8px 5px #00000017, 6px 0px transparent, 0px 8px transparent;
+  animation: loading-title-anim 5s 1s linear both;
 }
 
+.loading-title-anim {
+  -webkit-animation: loading-title-anim 5s 1s linear both;
+  animation: loading-title-anim 5s 1s linear both;
+}
+
+@-webkit-keyframes loading-title-anim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loading-title-anim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .loading .loading_title {
   font-family: Shrikhand;
   font-size: 40px;
   font-weight: bolder;
   color: #5050509c;
+  text-shadow: 0px #000000a6, -5px 4px #00000017, -3px -2px transparent, 0px 8px transparent;
   background: linear-gradient(#ff79da99, #9356dcba);
   width: 290px;
   text-align: center;
   border-radius: 20px;
   padding: 10px;
+  animation: load-anim 2s linear 2s infinite alternate-reverse both;
 }
 
+.load-anim {
+  -webkit-animation: load-anim 2s linear 2s infinite alternate-reverse both;
+  animation: load-anim 2s linear 2s infinite alternate-reverse both;
+}
+
+@-webkit-keyframes load-anim {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes load-anim {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
 main {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   position: relative;
+  z-index: 2;
+  animation: z-index-anim-main 0ms 3500ms linear both;
 }
 
+@keyframes z-index-anim-main {
+  0% {
+    z-index: 0;
+  }
+  100% {
+    z-index: 2;
+  }
+}
+@-webkit-keyframes z-index-anim-main {
+  0% {
+    z-index: 0;
+  }
+  100% {
+    z-index: 2;
+  }
+}
 .h1index {
   font-family: "Roboto";
   font-weight: 900;
@@ -521,22 +599,126 @@ footer ul a {
 
 .cookie {
   font-size: 160px;
-  color: #fbcf9cd1;
+  color: #fdcf99;
   position: absolute;
   text-shadow: -2px 0 transparent, 0 2px transparent, 2px 0 transparent, 0 -2px transparent;
   top: 285px;
   z-index: 1;
+  animation: cookie-swing 6s ease-in-out infinite;
 }
 
+.cookie_swing {
+  -webkit-animation: cookie-swing 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s infinite;
+  animation: cookie-swing 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s infinite;
+}
+
+@-webkit-keyframes cookie-swing {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+}
+@keyframes cookie-swing {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+}
 .bitedcookie {
   font-size: 160px;
   position: relative;
   top: 25px;
-  color: #cd8e458a;
+  color: #9f7d57a1;
   z-index: 2;
   text-shadow: -2px 0 #00000047;
+  animation: bitedcookie-swing 4s 2s ease-in-out infinite;
 }
 
+.bitedcookie-swing {
+  -webkit-animation: bitedcookie-swing 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s infinite;
+  animation: bitedcookie-swing 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s infinite;
+}
+
+@-webkit-keyframes bitedcookie-swing {
+  0% {
+    -webkit-transform: rotateX(70deg);
+    transform: rotateX(70deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(-70deg);
+    transform: rotateX(-70deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+}
+@keyframes bitedcookie-swing {
+  0% {
+    -webkit-transform: rotateX(70deg);
+    transform: rotateX(70deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(-70deg);
+    transform: rotateX(-70deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+}
 .loading_store {
   font-size: 90px;
   position: relative;
@@ -544,6 +726,7 @@ footer ul a {
   z-index: 3;
   color: #a7ffe9ad;
   text-shadow: 4px 0 #0000003d, 0 7px #00000012, 9px 0 transparent, 0 8px transparent;
+  visibility: hidden;
 }
 
 .btn {
