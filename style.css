@@ -380,12 +380,12 @@ body .loading {
   z-index: 1;
   background-color: transparent;
   padding: 20px;
-  animation: loading-title-anim 5s 1s linear both;
+  animation: loading-title-anim 1.5s 1s linear both;
 }
 
 .loading-title-anim {
-  -webkit-animation: loading-title-anim 5s 1s linear both;
-  animation: loading-title-anim 5s 1s linear both;
+  -webkit-animation: loading-title-anim 1.5s 1s linear both;
+  animation: loading-title-anim 1.5s 1s linear both;
 }
 
 @-webkit-keyframes loading-title-anim {
