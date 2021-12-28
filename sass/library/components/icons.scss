@@ -183,14 +183,14 @@
 }
 
 .hearts{
-    font-size: 25px;
+    font-size: 60px;
     color: $light;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black  ;
     cursor: pointer;
 }
 
 .hearts:hover{
-    font-size: 30px;
+    font-size: 65px;
     color: transparent;
     background:linear-gradient($primary, $secondary);
     box-sizing: border-box;

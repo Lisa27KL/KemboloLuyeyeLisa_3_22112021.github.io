@@ -784,14 +784,14 @@ footer ul a {
 }
 
 .hearts {
-  font-size: 25px;
+  font-size: 60px;
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   cursor: pointer;
 }
 
 .hearts:hover {
-  font-size: 30px;
+  font-size: 65px;
   color: transparent;
   background: linear-gradient(#FF79DA, #9356DC);
   box-sizing: border-box;
@@ -1049,6 +1049,14 @@ footer ul a {
 
   .h3index {
     font-size: 20px;
+  }
+
+  .hearts {
+    font-size: 25px;
+  }
+
+  .hearts:hover {
+    font-size: 30px;
   }
 
   /*pages menus*/
