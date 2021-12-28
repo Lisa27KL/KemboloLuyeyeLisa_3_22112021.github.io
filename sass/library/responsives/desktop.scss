@@ -1,4 +1,16 @@
 @media all and (min-width:1200px){
+    body .loading{
+        justify-content: center;
+    }
+
+    .cookie{
+        top: 340px;
+    }
+
+    .bitedcookie{
+        top: 25px;
+    }
+
     header{
         height: 90px;
         justify-content: center;
@@ -160,6 +172,14 @@
 
     .h3index{
         font-size: 20px;
+    }
+
+    .hearts{
+        font-size: 25px;
+    }
+
+    .hearts:hover{
+        font-size: 30px;
     }
 
     /*pages menus*/
