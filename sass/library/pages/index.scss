@@ -4,8 +4,7 @@
     background-color: $background;
     padding-bottom: 80px;
     .map{
-        @include flex-row-aligncenter;
-        justify-content: center;
+        @include flex-row-aligncenter-justcontcent;
         background: $location;
         width: 100%;
         height: 115px;
@@ -69,6 +68,7 @@
 
     &:hover{
         background: lighten($color: $lightprimary, $amount: 5);
+        transform: scale(1.05);
         .iconscards1{
             color: $secondary;
         }
@@ -93,9 +93,7 @@ ol li::before{
     width: 60px;
     height: 60px;
     color: $background ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-row-aligncenter-justcontcent;
     font-family: 'Roboto';
     margin-left: -104px;
     margin-left: -104px;
@@ -105,10 +103,10 @@ ol li::before{
     @include flex-wrap-column-aligcenter;
     width: 95%;
     height: auto;
-    @include padding-sections-colorees;
     background-color: $background;
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: 90px;
     padding-top: 50px;
 }
 
@@ -177,12 +175,10 @@ main .imgmenus{
 }
 
 .infosmenus{
-    display: flex;
-    flex-direction: row;
+    @include flex-row-aligncenter;
+    justify-content: space-evenly;
     flex-wrap: nowrap;
     width: 90%;
     height: 90%;
     margin: 25px;
-    justify-content: space-evenly;
-    align-items: center;
 }

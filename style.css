@@ -80,6 +80,7 @@
 }
 .cards1:hover {
   background: #ecc6ec;
+  transform: scale(1.05);
 }
 .cards1:hover .iconscards1 {
   color: #9356DC;
@@ -105,6 +106,7 @@ ol li::before {
   height: 60px;
   color: #f2f2f2;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-family: "Roboto";
@@ -119,11 +121,10 @@ ol li::before {
   align-items: center;
   width: 95%;
   height: auto;
-  padding-bottom: 90px;
-  padding-top: 60px;
   background-color: #f2f2f2;
   padding-left: 25px;
   padding-right: 25px;
+  padding-bottom: 90px;
   padding-top: 50px;
 }
 
@@ -196,12 +197,12 @@ main .imgmenus {
 .infosmenus {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
   flex-wrap: nowrap;
   width: 90%;
   height: 90%;
   margin: 25px;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 main {
@@ -240,6 +241,7 @@ main .imgpages {
 .articlespages {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   border-radius: 37px;
   box-sizing: border-box;
   background-color: white;
@@ -248,7 +250,6 @@ main .imgpages {
   font-size: 45px;
   margin-top: 30px;
   margin-bottom: 30px;
-  flex-wrap: nowrap;
   box-shadow: 3px 6px 8px #d3d3d3;
   animation: slideup 2s cubic-bezier(0.75, 0.73, 0.51, 1.43);
 }
@@ -294,9 +295,9 @@ main .imgpages {
 }
 .cardsmenus {
   display: flex;
-  width: 93%;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 93%;
   white-space: nowrap;
   overflow: hidden;
   padding: 25px;
@@ -314,10 +315,10 @@ main .imgpages {
 .price {
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
   justify-content: flex-end;
   margin: 0px;
   font-weight: 600;
-  align-items: flex-end;
   height: 116px;
 }
 
@@ -326,11 +327,12 @@ main .imgpages {
 }
 
 .check {
-  width: 0px;
-  border-radius: 0 35px 35px 0;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 0px;
+  border-radius: 0 35px 35px 0;
   background-color: #99E2D0;
   transition: 0.4s cubic-bezier(0.51, 0.52, 0.87, 0.88);
   cursor: pointer;
@@ -750,8 +752,9 @@ footer ul a {
   box-shadow: 0px 0px 12px 0px #505050;
 }
 .btn:hover {
-  background: #f3d9f3;
-  color: dark;
+  background: #eabfea;
+  color: #505050;
+  transform: scale(1.1);
 }
 
 .new {
@@ -781,14 +784,14 @@ footer ul a {
 }
 
 .hearts {
-  font-size: 65px;
+  font-size: 25px;
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   cursor: pointer;
 }
 
 .hearts:hover {
-  font-size: 70px;
+  font-size: 30px;
   color: transparent;
   background: linear-gradient(#FF79DA, #9356DC);
   box-sizing: border-box;
@@ -796,7 +799,12 @@ footer ul a {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  transition: heartscolors 300ms ease-in-out;
+  animation: heartscolors 1200ms 0s ease-in-out;
+}
+
+.heartscolors {
+  -webkit-animation: heartscolors 500ms 0s ease-in-out;
+  animation: heartscolors 500ms 0s ease-in-out;
 }
 
 @keyframes heartscolors {
@@ -826,6 +834,8 @@ footer ul a {
   transition: opacity 5ms;
 }
 .btnpages:hover {
+  background: #eabfea;
+  color: #505050;
   transform: scale(1.1);
 }
 
@@ -874,10 +884,6 @@ footer ul a {
 
   .cards2 {
     width: 90%;
-  }
-
-  .hearts {
-    height: 65px;
   }
 
   .bntpages {
@@ -986,7 +992,7 @@ footer ul a {
 
   .cards2 {
     width: 23%;
-    height: 275px;
+    height: 285px;
     margin-top: 30px;
     padding: 0;
     border-radius: 25px;
@@ -1043,15 +1049,6 @@ footer ul a {
 
   .h3index {
     font-size: 20px;
-  }
-
-  .hearts {
-    font-size: 40px;
-    margin-left: 40px;
-  }
-
-  .hearts:hover {
-    font-size: 45px;
   }
 
   /*pages menus*/
