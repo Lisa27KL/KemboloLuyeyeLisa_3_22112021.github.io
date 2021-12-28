@@ -8,13 +8,6 @@
     padding: 0;
 }
 
-
-@mixin padding-sections-colorees{
-    padding-bottom: 90px;
-    padding-top: 60px;
-}
-
-
 @mixin flex-row{
     display: flex;
     flex-direction: row;
@@ -23,6 +16,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+@mixin flex-row-aligncenter-justcontcent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 @mixin flex-row-aligncen-justispacearound{

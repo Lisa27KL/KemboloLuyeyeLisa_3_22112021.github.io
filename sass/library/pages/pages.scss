@@ -27,6 +27,7 @@ main .imgpages{
 
 .articlespages{
     @include flex-row;
+    flex-wrap: nowrap;
     border-radius: 37px;
     box-sizing: border-box;
     background-color: $light;
@@ -35,7 +36,6 @@ main .imgpages{
     font-size: 45px;
     margin-top: 30px;
     margin-bottom: 30px;
-    flex-wrap: nowrap;
     box-shadow: 3px 6px 8px $shadow;
     animation:  slideup 2s cubic-bezier(0.75, 0.73, 0.51, 1.43);
 }
@@ -87,12 +87,11 @@ main .imgpages{
     }
 }
 
-
 .cardsmenus{
     display: flex;
-    width: 93%;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 93%;
     white-space: nowrap;
     overflow: hidden;
     padding: 25px;
@@ -108,12 +107,9 @@ main .imgpages{
 }
 
 .price{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    @include flex-row-flexend-flexend;
     margin: 0px;
     font-weight: 600;
-    align-items: flex-end;
     height: 116px;
 }
 
@@ -122,11 +118,9 @@ main .imgpages{
 }
 
 .check{
+    @include flex-row-aligncenter-justcontcent;
     width: 0px;
     border-radius: 0 35px 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: $tertiary; 
     transition: 0.4s cubic-bezier(0.51, 0.52, 0.87, 0.88);
     cursor: pointer;
@@ -148,7 +142,6 @@ main .imgpages{
     width: 70px;
     opacity: 1;
 }
-
 
 .articlespages:hover .fas{
     transform: rotate(0deg);
