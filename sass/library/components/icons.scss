@@ -4,12 +4,12 @@
     position: absolute;
     text-shadow: -2px 0 transparent, 0 2px transparent, 2px 0 transparent, 0 -2px transparent;
     z-index: 1;
-    animation: cookie-swing 6s ease-in-out infinite ;
+    animation: cookie-swing 1s ease-in-out infinite ;
 }
 
 .cookie_swing {
-	-webkit-animation: cookie-swing 6s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0s infinite ;
-	        animation: cookie-swing 6s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0s infinite ;
+	-webkit-animation: cookie-swing 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0s infinite ;
+	        animation: cookie-swing 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0s infinite ;
 }
 
 @-webkit-keyframes cookie-swing {
@@ -63,22 +63,22 @@
 .bitedcookie{
     font-size: 160px;
     position: relative;
-    top: -310px;
+    top: -210px;
     color: #9f7d57a1;
     z-index: 2;
     text-shadow: -2px 0 #00000047;
-    animation: bitedcookie-swing  4s 2s ease-in-out infinite;
+    animation: bitedcookie-swing  1s 500ms ease-in-out infinite;
 }
 
 .bitedcookie-swing {
-	-webkit-animation: bitedcookie-swing 4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 2s infinite ;
-	        animation: bitedcookie-swing 4s cubic-bezier(0.175, 0.885, 0.320, 1.275) 2s infinite;
+	-webkit-animation: bitedcookie-swing 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) 500ms infinite ;
+	        animation: bitedcookie-swing 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) 500ms infinite;
 }
 
 @-webkit-keyframes bitedcookie-swing {
     0% {
-        -webkit-transform: rotateX(70deg);
-              transform: rotateX(70deg);
+        -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
         -webkit-transform-origin: top;
               transform-origin: top;
         opacity: 0;
@@ -91,21 +91,20 @@
         opacity: 1;
     }
     100% {
-        -webkit-transform: rotateX(-70deg);
-              transform: rotateX(-70deg);
+        -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
         -webkit-transform-origin: top;
               transform-origin: top;
         opacity: 0;
     }
 }
-
-@keyframes bitedcookie-swing  {
+@keyframes bitedcookie-swing {
     0% {
-        -webkit-transform: rotateX(70deg);
-              transform: rotateX(70deg);
-        -webkit-transform-origin: top;
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
               transform-origin: top;
-        opacity: 0;
+      opacity: 0;
     }
     60% {
         -webkit-transform: rotateX(0deg);
@@ -114,9 +113,9 @@
               transform-origin: top;
         opacity: 1;
     }
-    100% {
-        -webkit-transform: rotateX(-70deg);
-              transform: rotateX(-70deg);
+    80% {
+        -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
         -webkit-transform-origin: top;
               transform-origin: top;
         opacity: 0;

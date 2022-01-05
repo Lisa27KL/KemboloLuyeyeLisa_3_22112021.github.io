@@ -32,9 +32,8 @@
 }
 .introduction .restosinfos {
   font-family: "Roboto";
-  font-weight: 900;
-  width: 70%;
-  font-size: 38px;
+  width: 80%;
+  font-size: 45px;
   text-align: center;
   font-weight: 500;
 }
@@ -53,6 +52,7 @@
   padding-right: 25px;
   padding-left: 25px;
   width: 95%;
+  height: 663px;
 }
 
 .cards1 {
@@ -69,6 +69,7 @@
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  align-content: center;
   margin-top: 45px;
   margin-bottom: 45px;
   margin-left: 0;
@@ -110,8 +111,19 @@ ol li::before {
   align-items: center;
   justify-content: center;
   font-family: "Roboto";
-  margin-left: -104px;
-  margin-left: -104px;
+  margin-left: -124px;
+}
+
+.cards1-text1 {
+  margin-right: -47px;
+}
+
+.cards1-text2 {
+  margin-left: -30px;
+}
+
+.cards1-text3 {
+  margin-left: 31px;
 }
 
 .restaurants {
@@ -350,7 +362,7 @@ main .imgpages {
 .articlespages:hover .check {
   margin-right: 0;
   visibility: visible;
-  width: 70px;
+  width: 200px;
   opacity: 1;
 }
 
@@ -378,14 +390,14 @@ body .loading {
   align-content: flex-start;
   justify-content: space-evenly;
   z-index: 1;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.897);
   padding: 20px;
-  animation: loading-title-anim 1.5s 1s linear both;
+  animation: loading-title-anim 2s linear both;
 }
 
 .loading-title-anim {
-  -webkit-animation: loading-title-anim 1.5s 1s linear both;
-  animation: loading-title-anim 1.5s 1s linear both;
+  -webkit-animation: loading-title-anim 2s linear both;
+  animation: loading-title-anim 2s linear both;
 }
 
 @-webkit-keyframes loading-title-anim {
@@ -426,12 +438,12 @@ body .loading {
   text-align: center;
   border-radius: 20px;
   padding: 10px;
-  animation: load-anim 2s linear 2s infinite alternate-reverse both;
+  animation: load-anim 1s linear 1s infinite alternate-reverse both;
 }
 
 .load-anim {
-  -webkit-animation: load-anim 2s linear 2s infinite alternate-reverse both;
-  animation: load-anim 2s linear 2s infinite alternate-reverse both;
+  -webkit-animation: load-anim 1s linear 1s infinite alternate-reverse both;
+  animation: load-anim 1s linear 1s infinite alternate-reverse both;
 }
 
 @-webkit-keyframes load-anim {
@@ -485,34 +497,40 @@ main {
     z-index: 2;
   }
 }
-.h1index {
+h1 {
+  font-family: "Shrikhand";
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.h2index {
   font-family: "Roboto";
   font-weight: 900;
-  width: 52%;
-  font-size: 50px;
+  width: 100%;
+  font-size: 55px;
   text-align: center;
   margin-top: 30px;
 }
 
-.h2index {
-  font-size: 65px;
+.h3index {
+  font-size: 52px;
   width: 90%;
   margin-top: 0;
   margin-bottom: 0px;
 }
 
-.h3index {
+.h4index {
   font-size: 50px;
   margin: 4px;
   padding: 0;
 }
 
-.h1pages {
+.h2pages {
   font-family: "Shrikhand";
   font-size: 75px;
 }
 
-.h2pages {
+.h3pages {
   font-size: 46px;
   font-weight: 400;
   margin-top: 60px;
@@ -520,7 +538,7 @@ main {
   border-bottom: 3px solid #99E2D0;
 }
 
-.h3pages {
+.h4pages {
   width: 83%;
   margin: 0;
   font-size: 45px;
@@ -531,9 +549,9 @@ main {
   text-overflow: ellipsis;
 }
 
-h4 {
+.footer-title {
   font-family: "Shrikhand";
-  font-size: 45px;
+  font-size: 70px;
   font-weight: 400;
   margin-bottom: 10px;
   margin-top: 15px;
@@ -558,10 +576,6 @@ header {
   box-sizing: border-box;
 }
 
-.logo {
-  width: 55%;
-}
-
 footer {
   text-align: left;
   display: flex;
@@ -582,7 +596,7 @@ footer ul {
 
 footer ul li {
   height: auto;
-  font-size: 20px;
+  font-size: 40px;
   width: 95%;
   margin-left: 30px;
   padding: 0;
@@ -609,12 +623,12 @@ footer ul a {
   position: absolute;
   text-shadow: -2px 0 transparent, 0 2px transparent, 2px 0 transparent, 0 -2px transparent;
   z-index: 1;
-  animation: cookie-swing 6s ease-in-out infinite;
+  animation: cookie-swing 1s ease-in-out infinite;
 }
 
 .cookie_swing {
-  -webkit-animation: cookie-swing 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s infinite;
-  animation: cookie-swing 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s infinite;
+  -webkit-animation: cookie-swing 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s infinite;
+  animation: cookie-swing 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s infinite;
 }
 
 @-webkit-keyframes cookie-swing {
@@ -666,22 +680,22 @@ footer ul a {
 .bitedcookie {
   font-size: 160px;
   position: relative;
-  top: -310px;
+  top: -210px;
   color: #9f7d57a1;
   z-index: 2;
   text-shadow: -2px 0 #00000047;
-  animation: bitedcookie-swing 4s 2s ease-in-out infinite;
+  animation: bitedcookie-swing 1s 500ms ease-in-out infinite;
 }
 
 .bitedcookie-swing {
-  -webkit-animation: bitedcookie-swing 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s infinite;
-  animation: bitedcookie-swing 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s infinite;
+  -webkit-animation: bitedcookie-swing 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms infinite;
+  animation: bitedcookie-swing 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms infinite;
 }
 
 @-webkit-keyframes bitedcookie-swing {
   0% {
-    -webkit-transform: rotateX(70deg);
-    transform: rotateX(70deg);
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
     -webkit-transform-origin: top;
     transform-origin: top;
     opacity: 0;
@@ -694,8 +708,8 @@ footer ul a {
     opacity: 1;
   }
   100% {
-    -webkit-transform: rotateX(-70deg);
-    transform: rotateX(-70deg);
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
     -webkit-transform-origin: top;
     transform-origin: top;
     opacity: 0;
@@ -703,8 +717,8 @@ footer ul a {
 }
 @keyframes bitedcookie-swing {
   0% {
-    -webkit-transform: rotateX(70deg);
-    transform: rotateX(70deg);
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
     -webkit-transform-origin: top;
     transform-origin: top;
     opacity: 0;
@@ -716,9 +730,9 @@ footer ul a {
     transform-origin: top;
     opacity: 1;
   }
-  100% {
-    -webkit-transform: rotateX(-70deg);
-    transform: rotateX(-70deg);
+  80% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
     -webkit-transform-origin: top;
     transform-origin: top;
     opacity: 0;
@@ -828,10 +842,6 @@ footer ul a {
 }
 
 @media all and (min-width: 768px) {
-  header {
-    height: 125px;
-  }
-
   .logo {
     width: 50%;
     height: 80px;
@@ -843,19 +853,9 @@ footer ul a {
   .introduction .map .map-where {
     font-size: 35px;
   }
-  .introduction .restosinfos {
-    font-size: 35px;
-  }
-
-  .h1index {
-    width: 100%;
-    margin-top: 25px;
-    margin-bottom: 0px;
-    font-size: 45px;
-  }
 
   .h2index {
-    font-size: 60px;
+    margin-bottom: 0px;
   }
 
   .btn {
@@ -896,9 +896,8 @@ footer ul a {
     justify-content: center;
   }
 
-  .logo {
-    height: 45px;
-    width: 25%;
+  h1 {
+    font-size: 65px;
   }
 
   .introduction {
@@ -918,7 +917,7 @@ footer ul a {
     padding-right: 90px;
   }
 
-  .h1index {
+  .h2index {
     width: 100%;
     font-size: 30px;
     margin: 0;
@@ -946,9 +945,15 @@ footer ul a {
   .functioning {
     padding-bottom: 35px;
     padding-top: 30px;
+    height: 140px;
   }
 
-  .h2index {
+  .cards1-text1, .cards1-text2, .cards1-text3 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .h3index {
     font-size: 25px;
   }
 
@@ -1047,7 +1052,7 @@ footer ul a {
     margin-bottom: 0;
   }
 
-  .h3index {
+  .h4index {
     font-size: 20px;
   }
 
@@ -1076,7 +1081,7 @@ footer ul a {
     justify-content: center;
   }
 
-  .h1pages {
+  .h2pages {
     margin: 15px;
     font-size: 30px;
   }
@@ -1094,7 +1099,7 @@ footer ul a {
     padding: 10px 20px 25px 20px;
   }
 
-  .h2pages {
+  .h3pages {
     font-size: 15px;
     margin-top: 0;
     width: 10%;
@@ -1121,7 +1126,7 @@ footer ul a {
     align-content: space-between;
   }
 
-  .h3pages {
+  .h4pages {
     font-size: 17px;
     margin-bottom: 2px;
   }
@@ -1149,6 +1154,10 @@ footer ul a {
     border-radius: 0 20px 20px 0;
   }
 
+  .articlespages:hover .check {
+    width: 100px;
+  }
+
   footer {
     text-align: center;
     align-items: center;
@@ -1156,10 +1165,15 @@ footer ul a {
     padding: 0;
     top: 0;
   }
-  footer h4 {
+  footer .footer-title {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 50px;
+  }
+
+  footer ul li {
+    font-size: 23px;
   }
 }
 
