@@ -354,7 +354,7 @@ main .imgpages {
   color: white;
   transform: rotate(360deg);
   transition: 0.4s ease-in-out;
-  font-size: 25px;
+  font-size: 55px;
 }
 
 .articlespages:hover .check {
@@ -1149,6 +1149,10 @@ footer ul a {
   .check {
     box-sizing: border-box;
     border-radius: 0 20px 20px 0;
+  }
+
+  .check i {
+    font-size: 25px;
   }
 
   .articlespages:hover .check {
